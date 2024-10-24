@@ -181,6 +181,9 @@ body {
     padding-top: 15px;
     text-indent: 30px; /* Ajusta el valor según sea necesario */
   }
+    #desktop-img {
+      background-image: url("./img/miriam.jpg");
+    }
   
   /* Media Queries para tabletas */
   @media (min-width: 769px) and (max-width: 1024px) {

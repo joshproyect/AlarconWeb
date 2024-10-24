@@ -1,0 +1,72 @@
+body{
+    width: 1100px;
+    height: 1100px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+header{
+
+
+}
+.navBar{
+    display: inline;
+
+
+}
+.loguito{
+
+}
+.rigth-button{
+
+}
+.contact-button{
+
+}
+
+.inicio{
+
+}
+.desckspot{
+    text-align: center;
+    display: flex;
+
+
+}
+.services{
+
+}
+.left-img{
+
+}
+.center-img{
+
+}
+.rigth-img{
+
+}
+.about-me{
+
+}
+.textAboutMe{
+
+}
+.toga-img{
+
+}
+.contact{
+
+}
+    #deskBackgroud{
+        background-image: url(./img/miriam.jpg);
+  position: absoluta;
+  left: 0px;
+  top: 0px;
+  z-index: -10;
+  background-size: cover;
+    background-position: center;
+    width: 97vw;
+    height: 100vh;
+    margin: 1em;
+    opacity: 0,8;
+}
