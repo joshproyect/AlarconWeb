@@ -1,14 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AlarconWeb</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto AlarcónWeb</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div>
-        <img src="./img/img1.JPG" alt="fotomiriam">
-        <p>foto toga</p>
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#mis-servicios">Mis servicios</a></li>
+        <li class="dropdown">
+          Más
+          <ul class="dropdown-content">
+            <li><a href="#contactame">Contactame</a></li>
+          </ul>
+        </li>
+        <!-- <div class="abg">
+        <button>Miriam Alarcón Abogada</button>
+      </div>   -->
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div class="overlay">
+      <!-- <img src="./img/pexels-august-de-richelieu-4427553.jpg" alt="hero"> -->
+      <h1>Miriam Alarcón Abogada</h1>
+      <h2>Abogada civil</h2>
+      <p>30 años ofreciendo el mejor asesoramiento y defensa jurídico-legal especializada en materia civil.</p>
+      <button>Contactar</button>
     </div>
+  </div>
+  <div class="servicios" id="mis-servicios">
+    <div class="izq">
+      <img src="./img/matrimonio2.jpg" alt="">
+      <center>
+        <p class="uno">Matrimonio</p>
+        <p class="dos">Divorcios y separaciones</p>
+      </center>
+    </div>
+    <div class="centro">
+      <img src="./img/inmobiliario.jpg" alt="">
+      <center>
+        <p class="uno">Inmobiliaria</p>
+        <p class="dos">Gestión de compraventas, arrendamientos, desahucios, <br> comunidad de propietarios...</p>
+      </center>
+    </div>
+    <div class="der">
+      <img src="./img/otros temas.png" alt="">
+      <center>
+        <p class="uno">Otros temas</p>
+        <p class="dos">Herencias, reclamación de deuda, nulidades canónicas...</p>
+      </center>
+    </div>
+  </div>
+  <div class="sobre" id="sobre">
+    <div class="acerca">
+      <img src="./img/acerca.jpg" alt="Foto" width="1200" height="650">
+    </div>
+    <div class="sobre" id="Contactame">
+      <ul>
+        <p><b>SOBRE MÍ</b></p> <br>
+
+        <li>30 años de experiencia</li>
+        <li>Compromiso y dedicación</li>
+        <li>Rapidez y eficiencia</li>
+        <li>Disponibilidad y trato humano</li>
+        <li>Buena relación calidad-precio</li>
+      </ul>
+    </div>
+  </div>
+  <!-- Botón de desplazamiento hacia arriba -->
+  <button onclick="scrollToTop()" id="scrollUpBtn" title="Ir arriba">↑</button>
+
+  <!-- Botón de desplazamiento hacia abajo -->
+  <button onclick="scrollToBottom()" id="scrollDownBtn" title="Ir abajo">↓</button>
+
+  <script src="script.js"></script>
+  <div class="contacto" id="Contactame">
+    <p class="uno">Contacto</p>
+    <p class="dos">¿Tienes alguna duda o quieres programar una cita online o presencial? <br>
+      Contacta conmigo y te atenderé lo más rápido posible.</p>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d24741.05946695275!2d1.3897994930364936!3d41.143449066002724!3m2!1i1024!2i768!4f13.1!2m1!1sCarrer%20L%20Urbanizaci%C3%B3n%20Clarasol%20Torredembarra%2C%20Spain!5e0!3m2!1ses!2sus!4v1729521741193!5m2!1ses!2sus"
+      width="1500" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+<footer id="footer">
+<p>&copy; 2024 Luis Salinas y Camila Moran. Todos los derechos reservados.</p></footer>
+</footer>
 </body>
+
 </html>
