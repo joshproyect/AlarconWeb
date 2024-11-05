@@ -204,7 +204,7 @@ header {
 
 /* Estilos del iframe de Google Maps */
 .contacto iframe {
-    width: 90%;
+    width: 75%;
     height: 500px;
     border: 1px solid black; /* Añade un borde de 1px sólido y negro */
     margin-top: 20px;
@@ -232,14 +232,14 @@ header {
         background-position: 0% 50%;
     }
 }
-.container {
-    max-width: 500px;
+.container_inicio {
+    max-width: 800px;
     margin: auto;
     background: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    background: linear-gradient(90deg, #004d00, #80e0a0); /* Degradado inicial */
+    background: linear-gradient(90deg, orange, #FEEDCD); /* Degradado inicial */
     background-size: 200% 200%; /* Para animar el degradado */
     animation: gradientAnimation 6s ease infinite; /* Animación del degradado */
 }
@@ -288,6 +288,14 @@ button:hover {
     color: green;
 }
 
+form input[type="checkbox"] {
+    width: 20px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+
+
 /* Estilos del pie de página */
 /* Bloque 7 */
 #footer {
@@ -304,4 +312,19 @@ button:hover {
 
 #footer span {
     font-weight: bold;
+}
+
+/* Estilo para los íconos de redes sociales */
+.redes-sociales {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Estilo para los íconos individuales */
+.redes-sociales a {
+    margin-left: 10px;
+    /* Espacio entre los íconos */
+    color: #333;
+    /* Color de los íconos */
 }

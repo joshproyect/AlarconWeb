@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="Realizado por :" content="Luis M Salinas y Camila Moran">
-<title>Miriam Alarcon Abogada</title>
-<link rel="stylesheet" href="./css/styles.css">
+<title>Miriam Alarcón</title>
+<link rel="stylesheet" href="./CSS/Estilos.css">
 </head>
 <body>
 <header>
@@ -31,17 +31,17 @@
 </div>
 <div class="servicios" id="mis-servicios"> <!-- Bloque 3 -->
     <div class="izq">
-        <img src="./img/matrimonio2.jpg" width="300px" alt="">
+        <img src="./img/matrimonio2.jpg" width="" alt="">
         <center><p class="uno">Matrimonio</p>
             <p class="dos">Divorcios y separaciones</p></center>
     </div>
     <div class="centro">
-    <img src="./img/inmobiliario.jpg" width="300px" alt="">
+    <img src="./img/inmobiliario.jpg" width="" alt="">
     <center><p class="uno">Inmobiliaria</p>
     <p class="dos">Gestión de compraventas, arrendamientos, desahucios, <br> comunidad de propietarios...</p></center>
     </div>
     <div class="der">
-    <img src="./img/otros temas.png" width="300px" alt="">
+    <img src="./img/otros temas.png" width="" alt="">
         <center><p class="uno">Otros temas</p>
             <p class="dos">Herencias, reclamación de deuda, nulidades canónicas...</p>
         </center>
@@ -75,38 +75,65 @@
 <p class="dos">¿Tienes alguna duda o quieres programar una cita online o presencial? <br>
     Contacta conmigo y te atenderé lo más rápido posible.</p>
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d24741.05946695275!2d1.3897994930364936!3d41.143449066002724!3m2!1i1024!2i768!4f13.1!2m1!1sCarrer%20L%20Urbanizaci%C3%B3n%20Clarasol%20Torredembarra%2C%20Spain!5e0!3m2!1ses!2sus!4v1729521741193!5m2!1ses!2sus" width="900" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d544574.9302862104!2d0.7060069707908609!3d41.06068800184364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1730796506625!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
  </div>
  <div class="formulario" id="contactame"> <!-- Bloque 6 -->
-  <div class="container">
-    <h1>Formulario de Contacto</h1>
-    <fieldset>
-    <form id="contactForm" id="contactFormContainer">
-        <label for="nombre">Nombre y Apellido:</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Colocar Nombre y Apellido" required>
+  <div class="container_inicio">
+    <div class="centrar">
+        <h1>Página de contacto</h1>
+    </div>
+    <div>
+        <form action="../index.html">
+        <fieldset>
+            <legend> Datos Cliente </legend>              
+            <label for="nombre">Nombre: </label>
+            <input  type="text"
+                        name="nombre" 
+                        title="Debe introducir entre 3 y 50 caracteres"
+                        value=""
+                        placeholder="Nombre y Apellidos" 
+                        required pattern="[A-Za-z]{3,50}"/>  
+                            
+            <label for="email">E-mail: </label>
+            <input type="email"
+                name="email"
+                placeholder="correo@mail.com" 
+                required>
+            
+            <label for="cuerpo">Preguntas:</label>
+            <textarea name="cuerpo" required maxlength="500"
+                placeholder="Si tienes alguna pregunta o inquietud, no dudes en escribirnos. Te responderemos a la brevedad posible. Max.500 caracteres"></textarea>
+                
+            
+            <b>Aceptar <!-- <a href="politicas.html" target="_blank">políticas</a> --><input type="checkbox" required></b>
 
-        <label for="dni">DNI:</label>
-        <input type="text" id="dni" name="dni" placeholder="No DNI-NIE..." required>
+            <input type="submit" value="submit"/>
 
-        <label for="email">Correo Electrónico:</label>
-        <input type="email" id="email" name="email" placeholder="E-mail" required>
-
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" required></textarea>
-
-        <button type="submit">Enviar</button>
-    </form>
-  </fieldset>
-    <p id="responseMessage"></p>
+        </fieldset>
+        </form>    
+    </div>   
+    
+    <div class="newsletter centrar">
+        <h3>Suscríbete en nuestro boletín</h3>
+        <fieldset>
+        <form onsubmit="alert('Gracias por Subscribirte a nuestro boletín, recibirás los correos en: ' + document.getElementById('email').value)">
+            <input type="email" id="email" placeholder="Tu correo electrónico" required>
+            <input type="submit" value="Suscribirse"/>
+          </fieldset>
+        </form>
+    </div>
+  </div>
 </div>
-<script src="./js/script.js"></script>
- </div>
  <Footer>
   <div id="footer"> <!-- Bloque 7 -->
     <p><p>&copy; <span id="year"></span> Realizado por: Luis Salinas y Camila Moran. Todos los derechos reservados.</p></p>
+    <div class="redes-sociales">
+      <a href="https://www.facebook.com" target="_blank"><img src="./img/facebook.png" alt="Facebook"></a>
+      <a href="https://es.linkedin.com" target="_blank"><img src="./img/linkedin.png" alt="Linkedin"></a>
+      <a href="https://instagram.com" target="_blank"><img src="./img/instagram.png" alt="Instagram"></a>
+  </div>
 </div>
  </Footer>   
 </body>
 </html>
-
 
