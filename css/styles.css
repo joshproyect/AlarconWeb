@@ -9,7 +9,7 @@ body {
 
 /* Estilos del encabezado y la barra de navegación */
 header {
-    background-color: #333;
+    background-color:#38539e;
     color: white;
     padding: 10px 0; /* Desde aqui */
     width: 100%;
@@ -47,7 +47,7 @@ header {
     /* Bloque 2 */
 .hero {
     position: relative;
-    background: url('../img/pexels-august-de-richelieu-4427553.jpg') no-repeat center center/cover;
+    background: url('../img/miriam.jpg') no-repeat center center/cover;
     height: 900px;
     color: white;
     text-align: center;
@@ -80,7 +80,7 @@ header {
 }
 
 .hero button {
-    background-color: #ff6600;
+    background-color:#38539e;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -89,7 +89,7 @@ header {
 }
 
 .hero button:hover {
-    background-color: #e65c00;
+    background-color: #3c3369;
 }
 
 /* Estilos de la sección de servicios */
@@ -140,12 +140,15 @@ header {
 /* Bloque 4 */
 .sobre {
     display: flex;
-    flex-wrap: wrap;
+    text-align: center;
     padding: 20px;
     background-color: #fff;
 }
-
+.acerca{
+    width: 50%;
+}
 .acerca img {
+    
     max-width: 100%;
     height: auto;
 }
@@ -204,7 +207,7 @@ header {
 
 /* Estilos del iframe de Google Maps */
 .contacto iframe {
-    width: 75%;
+    width: 90%;
     height: 500px;
     border: 1px solid black; /* Añade un borde de 1px sólido y negro */
     margin-top: 20px;
@@ -221,25 +224,15 @@ header {
 /* Estilo del Formulario */
 /* Bloque 6 */
 
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-.container_inicio {
-    max-width: 800px;
+s
+.container {
+    max-width: 500px;
     margin: auto;
     background: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    background: linear-gradient(90deg, orange, #FEEDCD); /* Degradado inicial */
+    background: linear-gradient(90deg, #004d00, #80e0a0); /* Degradado inicial */
     background-size: 200% 200%; /* Para animar el degradado */
     animation: gradientAnimation 6s ease infinite; /* Animación del degradado */
 }
@@ -288,14 +281,6 @@ button:hover {
     color: green;
 }
 
-form input[type="checkbox"] {
-    width: 20px;
-    display: inline-block;
-    margin-bottom: 5px;
-}
-
-
-
 /* Estilos del pie de página */
 /* Bloque 7 */
 #footer {
@@ -312,19 +297,4 @@ form input[type="checkbox"] {
 
 #footer span {
     font-weight: bold;
-}
-
-/* Estilo para los íconos de redes sociales */
-.redes-sociales {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-/* Estilo para los íconos individuales */
-.redes-sociales a {
-    margin-left: 10px;
-    /* Espacio entre los íconos */
-    color: #333;
-    /* Color de los íconos */
 }
