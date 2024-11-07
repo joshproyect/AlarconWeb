@@ -9,7 +9,7 @@ body {
 
 /* Estilos del encabezado y la barra de navegación */
 header {
-    background-color: #333;
+    background-color:#38539e;
     color: white;
     padding: 10px 0; /* Desde aqui */
     width: 100%;
@@ -47,7 +47,7 @@ header {
     /* Bloque 2 */
 .hero {
     position: relative;
-    background: url('../img/pexels-august-de-richelieu-4427553.jpg') no-repeat center center/cover;
+    background: url('../img/miriam.jpg') no-repeat center center/cover;
     height: 900px;
     color: white;
     text-align: center;
@@ -80,7 +80,7 @@ header {
 }
 
 .hero button {
-    background-color: #ff6600;
+    background-color:#38539e;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -89,7 +89,7 @@ header {
 }
 
 .hero button:hover {
-    background-color: #e65c00;
+    background-color: #3c3369;
 }
 
 /* Estilos de la sección de servicios */
@@ -140,12 +140,15 @@ header {
 /* Bloque 4 */
 .sobre {
     display: flex;
-    flex-wrap: wrap;
+    text-align: center;
     padding: 20px;
     background-color: #fff;
 }
-
+.acerca{
+    width: 50%;
+}
 .acerca img {
+    
     max-width: 100%;
     height: auto;
 }
@@ -221,17 +224,7 @@ header {
 /* Estilo del Formulario */
 /* Bloque 6 */
 
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
+s
 .container {
     max-width: 500px;
     margin: auto;
