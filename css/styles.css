@@ -221,65 +221,47 @@ header {
     }
 }
 
-/* Estilo del Formulario */
-/* Bloque 6 */
+/* Estilo del cONTACTo */
+/* Bloque 6 * */
 
-s
-.container {
-    max-width: 500px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    background: linear-gradient(90deg, #004d00, #80e0a0); /* Degradado inicial */
-    background-size: 200% 200%; /* Para animar el degradado */
-    animation: gradientAnimation 6s ease infinite; /* Animación del degradado */
+main {
+    flex: 1;
+    padding: 1rem;
 }
 
-h1 {
-    text-align: center;
+.contact-info {
+    max-width: 400px;
+    margin: 0 auto;
 }
 
-label {
-    margin-top: 10px;
-    display: block;
-}
-
-input, textarea {
-    width: 95%;
+.social-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    border: 1px solid rgb(87, 82, 82);
     padding: 10px;
-    margin: 5px 0 15px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
-fieldset {
-    border-radius: 12px;
+.social-item {
+    display: flex;
+    align-items: center;
 }
 
-button {
-    width: 60%;
-    padding: 10px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 124px;
-    cursor: pointer;
-    display: block; /* Asegúrate de que el botón sea un bloque para centrarlo */
-    margin: 20px auto; /* Centra el botón con margen automático */
-    
+.social-item img {
+    margin-right: 0.5rem;
 }
 
-button:hover {
-    background-color: #218838;
+.social-item a {
+    color: #4CAF50;
+    text-decoration: none;
 }
 
-#responseMessage {
-    text-align: center;
-    margin-top: 20px;
-    color: green;
+.social-item a:hover {
+    text-decoration: underline;
 }
+
 
 /* Estilos del pie de página */
 /* Bloque 7 */
