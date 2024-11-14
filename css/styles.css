@@ -9,15 +9,21 @@ body {
 
 /* Estilos del encabezado y la barra de navegación */
 header {
-    background-color:#38539e;
-    color: white;
-    padding: 10px 0; /* Desde aqui */
+    background-color:#ffffff;
+    color: rgb(0, 0, 0);
+    padding:  0; /* Desde aqui */
     width: 100%;
     position: fixed; /* Fija el encabezado en la parte superior */
     top: 0;
     z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
+    display: flex;
 }
-
+nav{
+   display: flex ;
+   justify-content: space-between;
+   align-items: center;
+    width: 100%;
+}
 
 .navbar {
     list-style-type: none;
@@ -25,6 +31,8 @@ header {
     padding: 0;
     overflow: hidden;
     text-align: center;
+    display: flex;
+    flex-direction: row;
 }
 
 .navbar li {
@@ -33,7 +41,7 @@ header {
 }
 
 .navbar a {
-    color: white;
+    color: rgb(9, 8, 8);
     text-decoration: none;
     font-weight: bold;
 }
@@ -42,7 +50,22 @@ header {
     text-decoration: underline;
 }
 
-
+.mailto a img { 
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    transition-duration: 2s;
+    
+}
+.mailto:hover{
+    scale:2;
+    background:rgb(72, 109, 229);
+    box-shadow: 0 0 10px #38539e;
+}
+img{
+    width:60px ;
+}
     /* Estilos de la sección hero */
     /* Bloque 2 */
 .hero {
@@ -107,11 +130,13 @@ header {
     flex: 1 1 300px;
     margin: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 20px rgba(33, 42, 85, 0.7);
+    border-radius: 10px;
 }
 
 .servicios div:hover {
     transform: scale(1.1); /* Aumenta el tamaño del elemento */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7); /* Añade una sombra */
+    /*box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7); /* Añade una sombra */
 }
 
 .servicios img {
@@ -127,6 +152,15 @@ header {
 .servicios .dos {
     font-size: 1em;
 }
+.bajoMapa{
+    display: flex;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
 
 /* Media Queries para diseño responsive */
 @media (max-width: 768px) {
@@ -140,16 +174,18 @@ header {
 /* Bloque 4 */
 .sobre {
     display: flex;
+    align-items: center;
     text-align: center;
+    
     padding: 20px;
-    background-color: #fff;
+    background-color: #bdbcc2;
 }
 .acerca{
-    width: 50%;
+    width: 100%;
 }
 .acerca img {
     
-    max-width: 100%;
+   width: 70%;
     height: auto;
 }
 
@@ -261,7 +297,7 @@ fieldset {
 button {
     width: 60%;
     padding: 10px;
-    background-color: #28a745;
+    background-color: rgb(69, 69, 128);
     color: white;
     border: none;
     border-radius: 124px;
@@ -272,19 +308,19 @@ button {
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #2f3f60;
 }
 
 #responseMessage {
     text-align: center;
     margin-top: 20px;
-    color: green;
+    color: rgb(67, 72, 140);
 }
 
 /* Estilos del pie de página */
 /* Bloque 7 */
 #footer {
-    background-color: #333;
+    background-color: #172d5d;
     color: white;
     text-align: center;
     padding: 10px 0;
